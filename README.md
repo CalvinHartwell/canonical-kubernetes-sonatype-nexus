@@ -214,6 +214,8 @@ InfluxDB is running at https://34.253.164.197:443/api/v1/namespaces/kube-system/
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'
 ```
 
+Now that we have a cluster, we can deploy Nexus on top and configure the cluster to use private registry. 
+
 ## Downloading Sonatype Nexus Registry
 
 Sonatype ships Nexus as two different versions: an OSS (Opensource) release and as a Pro release for which Sonatype provides support. 
@@ -221,16 +223,13 @@ Sonatype ships Nexus as two different versions: an OSS (Opensource) release and 
 To download the OSS release, find the download link here: 
 
 ## Deploying Sonatype Nexus Registry as Virtual Machine
-
 ## Deploying Sonatype Nexus Registry as a Container on Kubernetes
-
 ## Configuring Nexus Registry as Private Docker Registry
-
 ## Configuring Nexus Registry as a Proxy Docker Registry
-
 ## Configuring Nexus as a Repository Group
-
 ## Pushing Containers to the Private Registry
+
+
 
 ## Pulling Containers to the Private Registry
 
@@ -249,7 +248,7 @@ We have looked at deploying Canonical Kubernetes with Sonatype Nexus in various 
 ## Useful Links
 
 - [https://www.ubuntu.com/kubernetes](https://www.ubuntu.com/kubernetes)
-- https://github.com/juju-solutions/bundle-canonical-kubernetes[](https://github.com/juju-solutions/bundle-canonical-kubernetes)
+- [https://github.com/juju-solutions/bundle-canonical-kubernetes](https://github.com/juju-solutions/bundle-canonical-kubernetes)
 - [https://github.com/sonatype/nexus-public](https://github.com/sonatype/nexus-public)
 - [https://www.sonatype.com/download-oss-sonatype](https://www.sonatype.com/download-oss-sonatype)
 - [https://www.sonatype.com/nexus-repository-oss](https://www.sonatype.com/nexus-repository-oss)

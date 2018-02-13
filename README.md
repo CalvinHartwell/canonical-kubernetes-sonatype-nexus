@@ -8,7 +8,9 @@ Finally, we cover the post-configuration steps required to configure CDK to use 
 
 Nexus is a tried and tested product which has been around for many years and is used by many enterprise businesses world-wide. 
 
-SonaType also provide an open-source, free release of the product which makes it a perfect pairing with Canonical Kubernetes. 
+SonaType also provide an open-source, free release of the product (Nexus OSS)  which makes it a perfect pairing with Canonical Kubernetes. 
+
+These steps should also work for Nexus Repository Pro, the commercial supported version of Nexus. 
 
 ## Deploying Canonical Kubernetes
 
@@ -212,9 +214,13 @@ InfluxDB is running at https://34.253.164.197:443/api/v1/namespaces/kube-system/
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'
 ```
 
+## Downloading Sonatype Nexus Registry
+
+Sonatype ships Nexus as two different versions: an OSS (Opensource) release and as a Pro release for which Sonatype provides support. 
+
+To download the OSS release, find the download link here: 
+
 ## Deploying Sonatype Nexus Registry as Virtual Machine
-
-
 
 ## Deploying Sonatype Nexus Registry as a Container on Kubernetes
 
@@ -224,8 +230,26 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'
 
 ## Configuring Nexus as a Repository Group
 
+## Pushing Containers to the Private Registry
+
+## Pulling Containers to the Private Registry
+
+## Getting Support & Help
+
+To open issues with CDK, please open an issue with the repository here [https://github.com/juju-solutions/bundle-canonical-kubernetes](https://github.com/juju-solutions/bundle-canonical-kubernetes). If you want professional support for Kubernetes please contact Canonical Sales [https://www.ubuntu.com/kubernetes](https://www.ubuntu.com/kubernetes). 
+
+To get help with Nexus, you can open tickets on their Jira here [https://issues.sonatype.org/browse/NEXUS](https://issues.sonatype.org/browse/NEXUS) 
+
+## Summary 
+
+We have looked at deploying Canonical Kubernetes with Sonatype Nexus in various configurations. We've covered how to configure Kubernetes to use the private registry and how to push or pull containers into it.  
+
 ## Useful Links
 
+- [https://www.ubuntu.com/kubernetes](https://www.ubuntu.com/kubernetes)
+- [https://www.sonatype.com/download-oss-sonatype](https://www.sonatype.com/download-oss-sonatype)
+- [https://www.sonatype.com/nexus-repository-oss](https://www.sonatype.com/nexus-repository-oss)
+- [https://www.sonatype.com/download-nexus-repository-trial](https://www.sonatype.com/download-nexus-repository-trial)
 - [https://books.sonatype.com/nexus-book/3.0/reference/docker.html](https://books.sonatype.com/nexus-book/3.0/reference/docker.html)
 - [https://kubernetes.io/docs/getting-started-guides/ubuntu/installation/](https://kubernetes.io/docs/getting-started-guides/ubuntu/installation/)
 - [https://github.com/juju-solutions/bundle-canonical-kubernetes](https://github.com/juju-solutions/bundle-canonical-kubernetes)

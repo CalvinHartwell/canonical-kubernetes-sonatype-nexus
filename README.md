@@ -238,7 +238,9 @@ To download the OSS release, find the download link here:
 
 To open issues with CDK, please open an issue with the repository here [https://github.com/juju-solutions/bundle-canonical-kubernetes](https://github.com/juju-solutions/bundle-canonical-kubernetes). If you want professional support for Kubernetes please contact Canonical Sales [https://www.ubuntu.com/kubernetes](https://www.ubuntu.com/kubernetes). 
 
-To get help with Nexus, you can open tickets on their Jira here [https://issues.sonatype.org/browse/NEXUS](https://issues.sonatype.org/browse/NEXUS) 
+To get help with Nexus, you can open tickets on their Jira here [https://issues.sonatype.org/browse/NEXUS](https://issues.sonatype.org/browse/NEXUS). You can also try looking at the posts on Stack Overflow tagged with Nexus 3 [http://stackoverflow.com/questions/tagged/nexus3](http://stackoverflow.com/questions/tagged/nexus3) and the Nexus Repository User List [https://groups.google.com/a/glists.sonatype.com/forum/?hl=en#!forum/nexus-users](https://groups.google.com/a/glists.sonatype.com/forum/?hl=en#!forum/nexus-users). 
+
+Finally, Sonatype also sell support for Nexus Pro, the commercial version of Nexus which can be found here [https://www.sonatype.com/repository-pro-3-upgrade](https://www.sonatype.com/repository-pro-3-upgrade). 
 
 ## Summary 
 
@@ -247,6 +249,8 @@ We have looked at deploying Canonical Kubernetes with Sonatype Nexus in various 
 ## Useful Links
 
 - [https://www.ubuntu.com/kubernetes](https://www.ubuntu.com/kubernetes)
+- https://github.com/juju-solutions/bundle-canonical-kubernetes[](https://github.com/juju-solutions/bundle-canonical-kubernetes)
+- [https://github.com/sonatype/nexus-public](https://github.com/sonatype/nexus-public)
 - [https://www.sonatype.com/download-oss-sonatype](https://www.sonatype.com/download-oss-sonatype)
 - [https://www.sonatype.com/nexus-repository-oss](https://www.sonatype.com/nexus-repository-oss)
 - [https://www.sonatype.com/download-nexus-repository-trial](https://www.sonatype.com/download-nexus-repository-trial)

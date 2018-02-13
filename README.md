@@ -229,9 +229,12 @@ To download the OSS release, find the download link here:
 ## Configuring Nexus as a Repository Group
 ## Pushing Containers to the Private Registry
 
+To push or pull Docker Container from/to the Private Registry, the Docker daemon running on the Kubernetes worker nodes needs to be configured to use it. 
+
 
 
 ## Pulling Containers to the Private Registry
+
 
 ## Getting Support & Help
 
@@ -256,3 +259,4 @@ We have looked at deploying Canonical Kubernetes with Sonatype Nexus in various 
 - [https://books.sonatype.com/nexus-book/3.0/reference/docker.html](https://books.sonatype.com/nexus-book/3.0/reference/docker.html)
 - [https://kubernetes.io/docs/getting-started-guides/ubuntu/installation/](https://kubernetes.io/docs/getting-started-guides/ubuntu/installation/)
 - [https://github.com/juju-solutions/bundle-canonical-kubernetes](https://github.com/juju-solutions/bundle-canonical-kubernetes)
+

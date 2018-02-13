@@ -1,6 +1,14 @@
 # cdk-nexus
 
-This repository contains documentation for integrating Sonatype Nexus with Canonical Kubernetes (CDK) in order to use it as a private docker registry. 
+This repository contains documentation for integrating Sonatype Nexus 3 with Canonical Kubernetes (CDK) in order to use it as a private docker registry. 
+
+We cover not only the installation of Canonical Kubernetes using Juju but also the configuration and deployment of Sonatype Nexus 3 as a private docker registry. 
+
+Finally, we cover the post-configuration steps required to configure CDK to use the private registry. 
+
+Nexus is a tried and tested product which has been around for many years and is used by many enterprise businesses world-wide. 
+
+SonaType also provide an open-source, free release of the product which makes it a perfect pairing with Canonical Kubernetes. 
 
 ## Deploying Canonical Kubernetes
 
@@ -206,7 +214,9 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'
 
 ## Deploying Sonatype Nexus Registry as Virtual Machine
 
-## Deploying Sonatype Nexus Registry as a Container
+
+
+## Deploying Sonatype Nexus Registry as a Container on Kubernetes
 
 ## Configuring Nexus Registry as Private Docker Registry
 

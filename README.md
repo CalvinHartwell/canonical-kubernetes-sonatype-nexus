@@ -222,13 +222,16 @@ Sonatype ships Nexus as two different versions: an OSS (Opensource) release and 
 
 To download the OSS release, find the download link here: 
 
-## Deploying Sonatype Nexus Registry as Virtual Machine, Physical Machine or LXD Container 
+## Deploying Sonatype Nexus Registry
+
+Nexus is distributed as an operating system package or docker container. This means we can install it on a Virtual Machine, Physical Machine or as an LXD Container.  
+
 ## Deploying Sonatype Nexus Registry as a Container on Kubernetes
 ## Configuring Nexus Registry as Private Docker Registry
 ## Configuring Nexus Registry as a Proxy Docker Registry
 ## Configuring Nexus as a Repository Group
 
-## Pushing Containers to the Private Registry
+## Using the Private Registry
 
 To push or pull Docker Container from/to the Private Registry, the Docker daemon running on the Kubernetes worker nodes needs to be configured to use it. 
 
@@ -237,8 +240,7 @@ There are two things which need to be configured:
 - If the Nexus Private Registry is using self signed certificates, we must tell the Docker Daemon to ignore the SSL/TLS verification checks on the certicate for our Registry. 
 - We must log into the Registry on the kubernetes workers or provide the credentials to the Docker daemon through the runtime parameters. 
 
-## Pulling Containers to the Private Registry
-
+To push containers to the Private Registry, 
 To pull containers from the Private Registry, 
 
 ## Getting Support & Help

@@ -220,11 +220,27 @@ Now that we have a cluster, we can deploy Nexus on top and configure the cluster
 
 Sonatype ships Nexus as two different versions: an OSS (Opensource) release and as a Pro release for which Sonatype provides support. 
 
-To download the OSS release, find the download link here: 
+To download the OSS release, find the download link here: [https://www.sonatype.com/download-oss-sonatype](https://www.sonatype.com/download-oss-sonatype). You should end up with a tar archive with a name like: nexus-3.8.0-02-unix.tar.gz. 
+
 
 ## Deploying Sonatype Nexus Registry
 
-Nexus is distributed as an operating system package or docker container. This means we can install it on a Virtual Machine, Physical Machine or as an LXD Container.  
+Nexus is distributed as a tar archive or docker container. This means we can install it on a Virtual Machine, Physical Machine or as an LXD Container.  
+We will start as with the tar archive, make sure you download it using the previous instructions. We will extract this somewhere useful, the manual suggests using /opt/:
+
+```
+# Create /opt/nexus and extract nexus, set user and file permissions 
+sudo useradd nexus --no-create-home --disabled-login --disabled-password nexus
+sudo mkdir /opt/nexus
+sudo tar xvf ~/Downloads/nexus*.tar.gz -o /opt/nexus/
+chown nexus:nexus -R /opt/nexus
+``` 
+
+Once we've extracted Nexus, we now need to install Java for Nexus to work. According to the documentation, we should use Oracle Java: 
+
+```
+
+```
 
 ## Deploying Sonatype Nexus Registry as a Container on Kubernetes
 ## Configuring Nexus Registry as Private Docker Registry
@@ -241,6 +257,7 @@ There are two things which need to be configured:
 - We must log into the Registry on the kubernetes workers or provide the credentials to the Docker daemon through the runtime parameters. 
 
 To push containers to the Private Registry, 
+
 To pull containers from the Private Registry, 
 
 ## Getting Support & Help
